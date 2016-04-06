@@ -1,3 +1,181 @@
+* {
+	font-family: Arial;
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+}
+
+
+
+/* --- HEADER --- */
+
+.header {
+	text-align: left;
+	padding: 20px 0;
+	color: white;
+	background-color: black;
+}
+
 .header i {
 	font-size: 30px;
+	float: left;
+	margin-right: 10px;
+}
+
+li {
+	float: left;
+	list-style: none;
+	padding-left: 50px;
+	font-size: 20px;
+}
+
+
+/* --- PORTADA --- */
+
+.portada {
+	height: 500px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	background-color: black;
+}
+
+img.back {
+	width: 100%;
+	display: inline;
+	position: absolute;
+	left: 0;
+	top: -100px;
+	filter:alpha(opacity=50);
+	-moz-opacity:.50;
+	opacity:.50;
+}
+
+
+div.text {
+	margin: 0 auto;
+	position: relative;
+	color: #FFFFFF;
+	top: 130px;
+}
+
+p.big {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+
+.portada p {
+	margin-bottom: 30px;
+}
+
+div.buttons {
+	position: relative;
+	top: 150px;
+	margin: 0 auto;
+}
+
+div.portafolio {
+	width: 150px;
+	height: 50px;
+	background-color: #1F1F1F;
+	border: 1px solid black;
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+div.learn {
+	width: 150px;
+	height: 50px;
+	background-color: grey;
+	border: 1px solid white;
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+
+
+/* --- Portfolio --- */
+
+div.portfolio {
+	margin: 0 auto;
+	text-align: center;
+	background-color: #EDEDED;
+	padding: 50px 0;
+	color: #5A5A5A;
+}
+
+p.title {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.nav2 {
+	margin: 0 auto;
+}
+
+.nav2 ul {
+	color: black;
+	margin: 0 auto;
+}
+
+.nav2 ul li {
+	height: 40px;
+	background-color: white;
+	border: 2px solid #EDEDED;
+	padding-left: 0;
+	padding: 7px 20px;
+	font-size: 18px;
+	margin: 20px auto;
+}
+
+.nav2 ul li:hover {
+	background-color: #0dc0c0;
+	color: white;
+	cursor: pointer;
+}
+
+
+div.load {
+	width: 150px;
+	height: 50px;
+	background-color: #1F1F1F;
+	border: 1px solid black;
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	margin: 20px auto;
+}
+
+
+
+/* --- City --- */
+
+div.city {
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	overflow: hidden;
+}
+
+.city img {
+	width: 100%;
+	filter:alpha(opacity=50);
+	-moz-opacity:.50;
+	opacity:.50;
+}
+
+div.call {
+	width: 150px;
+	height: 50px;
+	background-color: grey;
+	border: 1px solid white;
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	position: relative;
 }
