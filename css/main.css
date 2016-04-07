@@ -12,31 +12,13 @@
 /* --- HEADER --- */
 
 .header {
-	text-align: left;
-	padding: 20px 0;
+	width: 100%;
+	max-width: 1280px;
+	height: 600px;
+	padding: 10px 0;
 	color: white;
-	background-color: black;
-}
-
-.header i {
-	font-size: 30px;
-	float: left;
-	margin-right: 10px;
-}
-
-li {
-	float: left;
-	list-style: none;
-	padding-left: 50px;
-	font-size: 20px;
-}
-
-
-/* --- PORTADA --- */
-
-.portada {
-	height: 500px;
 	text-align: center;
+	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 	background-color: black;
@@ -47,12 +29,42 @@ img.back {
 	display: inline;
 	position: absolute;
 	left: 0;
-	top: -100px;
-	filter:alpha(opacity=50);
-	-moz-opacity:.50;
-	opacity:.50;
+	top: 0px;
+	filter:alpha(opacity=30);
+	-moz-opacity:.30;
+	opacity:.30;
 }
 
+.header i {
+	font-size: 30px;
+	float: left;
+	margin-right: 2px;
+	position: relative;
+}
+
+.header h3 {
+	text-align: left;
+	position: relative;
+	margin-top: 5px;
+}
+
+.nav ul {
+	position: relative;
+	margin-top: 5px;
+	left: 43%;
+}
+
+li {
+	float: left;
+	list-style: none;
+	padding-left: 50px;
+	font-size: 18px;
+}
+
+li:hover {
+	color: #0dc0c0;
+	cursor: pointer;
+}
 
 div.text {
 	margin: 0 auto;
@@ -67,8 +79,9 @@ p.big {
 }
 
 
-.portada p {
+.header p {
 	margin-bottom: 30px;
+	white-space: pre-line;
 }
 
 div.buttons {
@@ -96,6 +109,17 @@ div.learn {
 	font-size: 20px;
 	padding-top: 10px;
 }
+
+div.portafolio:hover {
+	background-color: #0dc0c0;
+	cursor: pointer;
+}
+
+div.learn:hover {
+	background-color: #0dc0c0;
+	cursor: pointer;
+}
+
 
 
 
@@ -151,6 +175,31 @@ div.load {
 	margin: 20px auto;
 }
 
+div.load:hover {
+	background-color: #0dc0c0;
+	cursor: pointer;
+}
+
+
+.photo img {
+	width: 95%;
+}
+
+.photo {
+	width: 490px;
+	height: 100%;
+	background-color: white;
+	border: 2px solid silver;
+	white-space: pre-line;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.photo p {
+	margin: 0 auto;
+	font-size: 14px;
+}
+
 
 
 /* --- City --- */
@@ -159,14 +208,16 @@ div.city {
 	width: 100%;
 	height: 400px;
 	background-color: black;
+	position: relative;
 	overflow: hidden;
 }
 
 .city img {
 	width: 100%;
-	filter:alpha(opacity=50);
-	-moz-opacity:.50;
-	opacity:.50;
+	position: absolute;
+	filter:alpha(opacity=30);
+	-moz-opacity:.30;
+	opacity:.30;
 }
 
 div.call {
@@ -178,4 +229,230 @@ div.call {
 	font-size: 20px;
 	padding-top: 10px;
 	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.call:hover {
+	background-color: #0dc0c0;
+	cursor: pointer;
+}
+
+.city p {
+	position: relative;
+	color: white;
+	font-size: 20px;
+	white-space: pre-line;
+	text-align: center;
+	margin-top: 140px;
+	margin-bottom: 50px;
+}
+
+
+
+/* --- CHOOSE --- */
+
+div.choose {
+	text-align: center;
+	margin: 0 auto;
+	background-color: #EDEDED;
+	padding: 50px 0;
+	color: #5A5A5A;
+}
+
+.st, .pr, .ult {
+	background-color: white;
+	padding: 20px 10px;
+	margin-top: 30px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid silver;
+}
+
+
+div.standar, .ultimate {
+	background-color: #1F1F1F;
+	color: white;
+	font-size: 24px;
+	padding: 20px 10px;
+}
+
+div.premium {
+	background-color: #0dc0c0;
+	color: white;
+	font-size: 24px;
+	padding: 20px 10px;
+}
+
+div.price {
+	background-color: #EDEDED;
+	padding: 20px 20px;
+	margin-bottom: 20px;
+}
+
+.price span {
+	font-size: 20px;
+}
+
+hr {
+	color: #EDEDED;
+	margin: 0 40px;
+}
+
+.choose p:not(.title) {
+	color: grey;
+	font-size: 14px;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+div.purchase {
+	width: 120px;
+	height: 40px;
+	background-color: #1F1F1F;
+	border: 1px solid black;
+	color: #EDEDED;
+	font-size: 18px;
+	padding-top: 7px;
+	margin: 20px auto;
+}
+
+div.purchase:hover {
+	background-color: #0dc0c0;
+	cursor: pointer;
+}
+
+
+/* --- CUSTOMERS --- */
+
+div.customers {
+	text-align: center;
+	color: #1F1F1F;
+	padding: 40px 0;
+	line-height: 2em;
+}
+
+.customers img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-top: 30px;
+}
+
+
+
+/* --- CONTACT --- */
+
+.contact {
+	height: 600px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+}
+
+.contact img {
+	width: 100%;
+	display: inline;
+	position: absolute;
+	left: 0;
+	top: -100px;
+	filter:alpha(opacity=50);
+	-moz-opacity:.50;
+	opacity:.50;
+}
+
+.contact p {
+	position: relative;
+	top: 30px;
+}
+
+p.subtitle {
+	font-size: 20px;
+	margin: 30px 0;
+	text-align: left;
+}
+
+p.about {
+	text-align: left;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+p.adress {
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.contact i {
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.formulario {
+	position: relative;
+	left: 20px;
+	top: 20px;
+}
+
+input {
+	width: 500px;
+	height: 40px;
+	font-size: 14px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	color: white;
+	background-color: grey;
+	filter:alpha(opacity=50);
+	-moz-opacity:.50;
+	opacity:.50;
+	border: none;
+}
+
+input#mensaje {
+	height: 100px;
+}
+
+div.submit {
+	width: 120px;
+	height: 50px;
+	background-color: #0dc0c0;
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	position: relative;
+	margin-left: 0;
+	text-align: center;
+}
+
+
+
+
+/* --- FOLLOW --- */
+
+div.follow {
+	color: #1F1F1F;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.follow i {
+	font-size: 40px;
+	margin: 30px 5px;
+}
+
+
+
+/* --- FOOTER --- */
+
+div.footer {
+	width: 100%;
+	background-color: #1F1F1F;
+	color: grey;
+	text-align: center;
+	font-size: 12px;
+	padding: 30px 0;
 }
